@@ -1,6 +1,8 @@
 # Exercise 1: Simple Greeting Function
 # Write a function called greet that takes a name as an argument and prints a greeting message.
 # If no name is provided, it should greet "Guest" by default.
+from grading import score1, score2, score3, average_score
+
 
 def greet(name="guest"):
     print(f"Hello, {name}")
@@ -60,6 +62,41 @@ convert_temperature(77,'C')
 convert_temperature(50)
 convert_temperature(100,'K')
 
+# Exercise: Grading System
+# Write a function called calculate_grade that takes three test scores as arguments, c
+# alculates the average, and returns a grade based on the average score. The grading scale
+# is as follows:
+#
+# A: 90 and above
+# B: 80-89
+# C: 70-79
+# D: 60-69
+# F: Below 60
+# Requirements
+# Calculate the average of the three scores.
+# Determine the grade based on the grading scale.
+# Print a message showing the average and the corresponding grade.
+
+
+def calculate_grade(score1, score2, score3):
+    # Calculate the average of the scores
+    average = (score1 + score2 + score3) / 3
+
+    # Determine the grade based on the average score
+    if average >= 90:
+        grade = 'A'
+    elif average >= 80:
+        grade = 'B'
+    elif average >= 70:
+        grade = 'C'
+    elif average >= 60:
+        grade = 'D'
+    else:
+        grade = 'F'
+
+    # Print the result
+    print(f"Average score: {average:.2f}")
+    print(f"Grade: {grade}")
 
 
 
