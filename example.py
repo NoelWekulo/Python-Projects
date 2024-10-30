@@ -97,6 +97,9 @@ def calculate_grade(score1, score2, score3):
     # Print the result
     print(f"Average score: {average:.2f}")
     print(f"Grade: {grade}")
+calculate_grade(85, 90, 78)  # Output: Average score: 84.33, Grade: B
+calculate_grade(92, 88, 95)  # Output: Average score: 91.67, Grade: A
+calculate_grade(55, 60, 58)  # Output: Average score: 57.67, Grade: F
 
 
 
